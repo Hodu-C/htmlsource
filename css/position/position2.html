@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .pos {
+        width: 800px;
+        height: 300px;
+        border: 2px solid green;
+        margin: 0 auto;
+        padding: 10px;
+        position: relative;
+      }
+      .pos img {
+        float: left;
+      }
+      .controls a {
+        background-color: #333;
+        line-height: 50px;
+        color: white;
+        display: block;
+        text-align: center;
+        white-space: nowrap; /*공백 기준으로 엔터 X*/
+        position: absolute;
+      }
+      .prev {
+        right: 100%;
+        top: calc(50% - 25px);
+      }
+      .next {
+        left: 100%;
+        top: calc(50% - 25px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pos">
+      <img src="https://placeimg.com/400/300/animals" alt="동물" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia non
+        assumenda nemo itaque incidunt modi! Accusamus libero sequi animi error.
+        Amet dicta veritatis est numquam repellendus quia aliquid voluptate
+        harum.
+      </p>
+      <div class="controls">
+        <div><a href="#" class="prev">Previous project</a></div>
+        <div><a href="#" class="next">Next project</a></div>
+      </div>
+    </div>
+  </body>
+</html>

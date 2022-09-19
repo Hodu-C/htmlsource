@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      li:first-child {
+        text-decoration: underline;
+      }
+      li:last-child {
+        text-decoration: underline;
+      }
+      li:nth-child(3) {
+        font-weight: bold;
+      }
+      li:nth-child(2n) {
+        background-color: silver;
+      }
+      li:nth-child(2n + 1) {
+        background-color: yellow;
+      }
+      li:nth-child(n + 4) {
+        color: blue;
+      }
+      .fruits p:nth-child(2) {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>리스트아이템</li>
+      <li>리스트아이템</li>
+      <li>리스트아이템</li>
+      <li>리스트아이템</li>
+      <li>리스트아이템</li>
+      <li>리스트아이템</li>
+    </ul>
+    <ul class="fruits">
+      <div>딸기</div>
+      <p>사과</p>
+      <p>오렌지</p>
+      <p>망고</p>
+    </ul>
+  </body>
+</html>

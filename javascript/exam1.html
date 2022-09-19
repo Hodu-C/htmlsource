@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="id">div 로 선언되었습니다.</div>
+    <div><a href="#" onclick="get()">div 요소 내용 출력하기</a></div>
+    <div>
+      <a href="#" onclick="set('변경되었습니다.')">div 요소 내용 변경하기</a>
+    </div>
+    <img
+      src="../img/929 제피로스 선풍기 쿨링 아이스 팩 쿨 냉풍조끼.jpg"
+      alt="youtube"
+      onclick="changeImg()"
+    />
+    <script>
+      let ex = document.getElementById("ex");
+      function get() {
+        //div id=ex 요소의 내용을 alert 출력
+        let msg = ex.innerText;
+        console.log(msg);
+        alert(msg);
+      }
+      function set(msg) {
+        //div id=ex 요소의 내용을 msg 변경
+        ex.innerText = msg;
+      }
+      function changeImg() {
+        //다른 이미지로 본경
+        document.querySelector("img").src = "../img/.png";
+      }
+      function changeStyle() {
+        let p1 = document.getElementById("p1");
+        //글꼴 변경
+        p1.style.fontFamily("p1");
+        //색상 변경
+        p1.style.color = "red";
+        // italic
+        p1.style.fontStyle = "italic";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #text {
+        color: green !important;
+      }
+      .area p {
+        color: red;
+      }
+      p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 우선순위 : 명시도 점수가 높은 선언ㄴ이 우선
+        important > 인라인 선언 > 아이디 선택자 > 클래스 선택자 > 태그 선택자 > 전체 > 상속
+
+        .list li.item {} => 21점
+        .list li:hover {} => 21점(가상클래스도 클래스 선택자로)
+        .box::before {} => 11점
+        #submit span {} => 101점
+        header .ment li:nth-child(2) => 22점
+        :not(.box) => 10점 (not 은 점수 없음)
+    -->
+    <div class="area">
+      <p id="text" style="color: pink">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quod?
+      </p>
+    </div>
+  </body>
+</html>

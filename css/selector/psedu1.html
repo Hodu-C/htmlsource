@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link {
+        text-decoration: none;
+        color: black;
+      }
+      a:active {
+        color: aquamarine;
+      }
+      a:visited {
+        color: magenta;
+      }
+      input {
+        width: 150px;
+        outline: none;
+        border: 1px solid lightgray;
+        transition: 0.4s;
+        padding: 5px 10px;
+      }
+      input:focus {
+        width: 200px;
+        border-color: mediumaquamarine;
+      }
+    </style>
+  </head>
+  <!-- 선택자
+        1. 태그: 태그명을 이용해서 css 부여
+        2. 전체
+        3. 아이디 : 여러개 부여(중복안되게)
+        4. 클래스 : 여러개 부여
+        5. 자손 : 공백
+        6. 자식 : >
+        7. 형제 : +(바로 아래) ~ (모든 형제)
+        8. 그룹 : ,
+        9. 속성 : [속성명], [속성명=값] : 연결된단어에 포함된 , [속성명^=값]:시작하는 ,
+                [속성명~=값]: 단일 단어가 있는 , [속성명$=값] : 끝나는
+        10. 가상 클래스
+            a:link => 방문하지 않은 a 의 스타일
+            a:active => (활성화)누르고 있을때 a 의 스타일
+            a:visited => 방문 후 a 의 스타일
+            :focus => 요소가 포커스를 가지고 있을 때
+            :hover => 요소 위에 마우스를 올릴 때
+            :disabled
+            :checked
+        11. 가상 요소 ::before, ::after (콜론 하나도 허용가능하지만 표준은 :: 구분 하기위해)
+    -->
+  <body>
+    <ul>
+      <li class="google">
+        <a href="http://www.google.com" target="_blank">구글</a>
+      </li>
+      <li class="link1"><a href="#" target="_blank">다음</a></li>
+      <li class="link2"><a href="#" target="_self">네이버</a></li>
+    </ul>
+    <a href="mailto:test@google.com">이메일 전송</a>
+    <input type="text" name="" id="" />
+  </body>
+</html>

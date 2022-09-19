@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button type="button" onclick="showDialog2()">출력</button>
+    <script>
+      //function 함수명(arg1 ...){}
+      let func1 = function showDialog(greeting, name) {
+        name = name || "홍길동"; //name이 없을때 대체 undefined 처리
+      };
+
+      function showDialog2() {
+        alert("안녕하세요 !");
+      }
+
+      //showDialog2();
+      //showDialog("f", "j");  함수를 변수에 할당 시 변수로 선언
+      func1("ghod", "jin");
+    </script>
+  </body>
+</html>

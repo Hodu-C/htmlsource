@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      ////호이스팅
+      //add(3,4);
+      //
+      //function add(x, y){
+      //    return x+ y;
+      //}
+      //
+      //
+      //호이스팅 불가
+      //const f = function(){
+      //    console.log("안녕하세요");
+      //}
+      //f();
+      //
+      //      const func1 = function (args) {
+      //        args();
+      //      };
+      //      function foo() {
+      //        console.log("함수는 전달 인자로 사용할 수 있음");
+      //      }
+      //      func1(foo);
+      //
+      //      //함수를 리턴값으로 활용
+      //      var foo1 = function () {
+      //        return function () {
+      //          console.log("이 함수는 리턴값으로 사용되는 함수임;");
+      //        };
+      //      };
+      //      const var1 = foo1();
+      //      var1();
+      //
+      //      //콜백 함수 - 비동기 : 명시적으로 호츌하지 않고, 단지 함수를 등록만 하고, 특정 시점(특정이벤트)에 도달했을때)
+      //      //            시스템에서 호출되는 함수
+      //      window.onload = function () {};
+      console.log("시작");
+      setTimeout(function () {
+        console.log("3초가 지났씁니다");
+      }, 3000);
+      console.log("종료");
+    </script>
+  </body>
+</html>

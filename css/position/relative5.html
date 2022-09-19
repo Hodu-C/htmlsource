@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        padding-top: 100px;
+      }
+      .container {
+        width: 500px;
+        height: 300px;
+        margin: 0 auto;
+        background-color: yellow;
+        position: relative;
+      }
+      .box {
+        height: 100px;
+        position: absolute;
+      }
+      .a {
+        background-color: red;
+        right: 500px; /*가변일때 %사용*/
+        top: 100px;
+      }
+      .b {
+        background-color: green;
+        right: 200px;
+        top: 100px;
+      }
+      .c {
+        background-color: blue;
+        left: 500px;
+        bottom: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box a">box aaaaaaaaa</div>
+      <div class="box b">box b</div>
+      <div class="box c">box ccc</div>
+    </div>
+  </body>
+</html>

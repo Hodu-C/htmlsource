@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      [name~="fruit"] {
+        color: red;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 선택자
+        1. 태그: 태그명을 이용해서 css 부여
+        2. 전체
+        3. 아이디 : 여러개 부여(중복안되게)
+        4. 클래스 : 여러개 부여
+        5. 자손 : 공백
+        6. 자식 : >
+        7. 형제 : +
+        8. 속성 : [속성명], [속성명=값] : 연결된단어에 포함된 , [속성명^=값]:시작하는 ,
+                [속성명~=값]: 단일 단어가 있는 , [속성명$=값] : 끝나는
+    -->
+    <ul>
+      <li class="google"><a href="#" target="_blank">구글</a></li>
+      <li class="link1"><a href="#" target="_blank">다음</a></li>
+      <li class="link2"><a href="#" target="_self">네이버</a></li>
+    </ul>
+    <div>
+      <input type="text" name="fruit_name fruit" id="" />
+      <input type="text" name="fruit_color fruit" id="" />
+    </div>
+    <a href="mailto:test@google.com">이메일 전송</a>
+  </body>
+</html>

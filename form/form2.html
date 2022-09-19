@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        form
+        1) input element
+            type= 'text'
+                = 'password'
+                = 'checkbox'
+                = 'radio'
+                = 'button'  모양만 제공 + 스크립트 이용 기능 부여 가능
+                = 'submit'  모양 + 폼 전송
+                = 'reset'   모양 + 폼 입력 초기화
+     -->
+    <form action="#"></form>
+    <div>
+      <label for="username">이름</label>
+      <input type="text" name="username" id="username" />
+    </div>
+    <div>
+      <label for="password">비밀번호</label>
+      <input type="password" name="password" id="password" />
+    </div>
+    <div><input type="button" value="보내기" /></div>
+    <div>
+      <!-- 중복 체크는 name을 같도록. -->
+      <input type="checkbox" name="fruits" id="" value="사과" />사과
+      <input type="checkbox" name="fruits" id="" value="복숭아" />복숭아
+      <input type="checkbox" name="fruits" id="" value="바나나" />바나나
+      <input type="checkbox" name="fruits" id="" value="파인애플" />파인애플
+    </div>
+
+    <div>
+      <input type="radio" name="gender" id="" value="남" checked />남
+      <input type="radio" name="gender" id="" value="여" />여
+    </div>
+
+    <div>
+      <input
+        type="button"
+        value="보내기1"
+        onclick="location.href='form1.html'"
+      />
+      <input type="submit" value="보내기2" />
+      <input type="reset" value="보내기3" />
+    </div>
+  </body>
+</html>

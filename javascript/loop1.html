@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let numArr = [52, 273, 586, 32, 57, 103, 312, 2];
+      let max_value = numArr[0];
+      let min_value = numArr[0];
+      for (let i = 1; i < numArr.length; i++) {
+        max_value = numArr[i] > max_value ? numArr[i] : max_value;
+        min_value = numArr[i] < max_value ? numArr[i] : max_value;
+      }
+      document.write(max_value);
+      document.write(min_value);
+    </script>
+  </body>
+</html>

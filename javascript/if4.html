@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var kor = Number(prompt("국어 점수 입력"));
+      var eng = Number(prompt("영어 점수 입력"));
+      var math = Number(prompt("수학 점수 입력"));
+
+      var avg = (kor + eng + math) / 3;
+      if (avg >= 90) {
+        console.log("A");
+        alert("A");
+      } else if (avg >= 80) {
+        console.log("B");
+        alert("B");
+      } else if (avg >= 70) {
+        console.log("C");
+        alert("C");
+      } else {
+        console.log("D");
+        alert("D");
+      }
+    </script>
+  </body>
+</html>

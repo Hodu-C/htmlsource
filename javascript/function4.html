@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //내장 함수 - 인코딩 함수
+      //인코딩 : 문자를 컴퓨터에 저장하거나 통신에 사용할 목적으로 부호화
+      //encodeURI() : 영문,숫자, 일부 특수문자 제외 후 인코딩
+      //encodeURIComponent : 영문, 숫자만 제외(문자 대부분 인코딩)
+
+      // document.write("<h3>인코딩</h3>");
+      // document.write(
+      //   encodeURI("http://localhost:8000/basic/info.html?name=홍길동&age=15")
+      // );
+      // document.write("<br>");
+      // document.write(
+      //   encodeURIComponent(
+      //     "http://localhost:8000/basic/info.html?name=홍길동&age=15"
+      //   )
+      // );
+      // document.write("<h3>디코딩</h3>");
+      // document.write(
+      //   decodeURI(
+      //     "http://localhost:8000/basic/info.html?name=%ED%99%8D%EA%B8%B8%EB%8F%99&age=15"
+      //   )
+      // );
+      // document.write("<br>");
+      // document.write(
+      //   decodeURIComponent(
+      //     "http%3A%2F%2Flocalhost%3A8000%2Fbasic%2Finfo.html%3Fname%3D%ED%99%8D%EA%B8%B8%EB%8F%99%26age%3D15"
+      //   )
+      // );
+      //
+      // //타이머 함수
+      // document.write("<br>");
+      // document.write("<h3>타이머</h3>");
+      // //일정한 시간이 흐른 후에 함수를 한번 실행하고싶을때 time.sleep() 3000=3second
+      // setTimeout(function () {
+      //   alert("3초가 지났습니다.");
+      // }, 3000);
+      //
+      // //eval() : 문자열을 코드로 실행할 수 있는 함수
+      // var test = "";
+      // test += "var number=10;";
+      // test += "alert(number);";
+      // eval(test)
+      //
+      // // isNaN() : 숫자인지 아닌지 확인
+      // var number = prompt("숫자를 입력하세요");
+      //
+      // if(isNaN(number)){
+      //   alert("문자");
+      // }
+      // else{
+      //   alert("숫자");
+      // }
+      //
+      //parseInt(),  parseFloat() - 문자 혼합 문자열일시 숫자들만 반환
+      //Number() - 문자 혼합 문자열일시 NaN 반환
+      //String()
+      var dollar = "1.5원123";
+      console.log(Number(dollar));
+      console.log(parseInt(dollar));
+      console.log(parseFloat(dollar));
+    </script>
+  </body>
+</html>

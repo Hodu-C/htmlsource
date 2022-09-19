@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+        form : 웹 서버에 제출하기 위한 양식 범위를 정의
+        다른 form 을 자식 요소로 포함할 수 없음
+         action : 전송한 정보를 처리할 웹 페이지의 URL
+
+        method : get(default) 사용자 입력값 주소줄엘 그대로 따라감
+                 post 사용자 입력값을 감춰서 보냄
+    -->
+    <form action="form2.html" method="post">
+      <div>
+        <input type="text" name="num1" id="num2" />
+        <select name="op" id="op">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+        <input type="text" name="num2" id="num2" />
+        <button type="button">결과확인</button>
+      </div>
+      <div><input type="text" name="result" id="result" /></div>
+    </form>
+    <script>
+      // 버튼이 출력되면 이름 입력값을 가져오기 - value
+      btn = document.querySelector("button");
+      btn.addEventListener("click", function () {
+        // 덧셈 후 결과를 alert 보여주기
+        let num1 = parseInt(document.getElementById("num1").value);
+        let num2 = parseInt(document.getElementById("num2").value);
+        let op = document.getElementById("op").value;
+        //alert(num1 + num2);
+        switch (op) {
+          case "+":
+            temp = num1 + num2;
+            break;
+          case "-":
+            temp = num1 - num2;
+            break;
+          case "*":
+            temp = num1 * num2;
+            break;
+          case "/":
+            temp = num1 / num2;
+            break;
+        }
+        document.getElementById("result").value = num1 + num2;
+      });
+    </script>
+  </body>
+</html>

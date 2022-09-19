@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //자바스크립트 내장 객체 - Date
+      const d = new Date();
+      document.write(d + "<br>");
+      document.write("연도 : " + d.getFullYear() + "<br>");
+      document.write("월 : " + d.getMonth() + "<br>"); //month는 0부터시작
+      document.write("일 : " + d.getDate() + "<br>");
+      document.write("시 : " + d.getHours() + "<br>");
+      document.write("분 : " + d.getMinutes() + "<br>");
+      document.write("초 : " + d.getSeconds() + "<br>");
+      document.write("날짜를 문자열로 : " + d.toLocaleString() + "<br>");
+
+      //새로운 날짜/시간 객체 애성
+      const d1 = new Date(2022, 10, 3);
+
+      const d2 = new Date(0);
+      document.write(d2 + "<br>");
+      const d3 = new Date(100000000000);
+      document.write(d2 + "<br>");
+
+      //Math 객체 : 새로운 객체 생성x
+      document.write("<br>");
+      document.write("<h3>Math 객체</h3>");
+      document.write(Math.PI + "<br>");
+      document.write(Math.floor(3.14592) + "<br>"); //내림
+      document.write(Math.ceil(2.123) + "<br>"); //올림
+      document.write(Math.abs(-3) + "<br>");
+      document.write(Math.max(5, 6, 8, 12, 1) + "<br>");
+      document.write(Math.min(5, 6, 8, 12, 1) + "<br>");
+      document.write(Math.random() + "<br>");
+      document.write(Math.sqrt(36) + "<br>"); //제곱근
+
+      document.write(Math.random() * 10 + "<br>"); //0~9 사이의 값
+
+      //while 문과 Math.random() 이용 두 개의 주사위를 던질 때(1~6)
+      //나오는 숫자를(숫자1, 숫자2) 출력하고, 두 개의 숫자의 합이 5가 아니면
+      //계속 반복 합 5면 스톱
+      document.write("<br>");
+      document.write("<br>");
+      let i = 1;
+      while (true) {
+        var dice1 = Math.ceil(Math.random() * 6);
+        var dice2 = Math.ceil(Math.random() * 6);
+        document.write(i + " 번째<br>");
+        document.write(dice1 + " " + dice2 + "<br>");
+        sum = dice1 + dice2;
+        i++;
+        if (sum == 5) break;
+      }
+
+      let lotArr = [];
+      // let lotArr = new Array();
+      while (true) {
+        let num = Math.floor(Math.random() * 45) + 1;
+        lotArr.push(num);
+        if (lotArr.length > 5) break;
+      }
+      document.write("이번주 로또 번호 " + lotArr);
+    </script>
+  </body>
+</html>

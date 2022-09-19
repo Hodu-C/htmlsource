@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+        form : 웹 서버에 제출하기 위한 양식 범위를 정의
+        다른 form 을 자식 요소로 포함할 수 없음
+         action : 전송한 정보를 처리할 웹 페이지의 URL
+
+        method : get(default) 사용자 입력값 주소줄엘 그대로 따라감
+                 post 사용자 입력값을 감춰서 보냄
+    -->
+    <form action="form2.html" method="post">
+      <div>
+        <label for="username">이름</label>
+        <input type="text" name="username" id="username" /><br />
+      </div>
+      <div>
+        <label for="password">비밀번호</label>
+        <input type="password" name="password" id="password" /><br />
+      </div>
+      <div>
+        <button>보내기</button>
+      </div>
+    </form>
+  </body>
+</html>

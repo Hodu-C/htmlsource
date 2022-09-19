@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        padding: 10px;
+      }
+      li {
+        list-style-type: none;
+      }
+      .menu {
+        height: 50px;
+        background-color: black;
+        line-height: 50px;
+      }
+      .menu li {
+        float: left;
+        color: white;
+        margin-left: 30px;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both; /* float 동작 중지 */
+      }
+      .main {
+        display: flex;
+        align-items: stretch;
+      }
+      .main .product {
+        width: 25%;
+        padding: 70px;
+      }
+      footer {
+        background-color: lightgray;
+        text-align: center;
+      }
+      <!-- footer > ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        background-color: lightgray;
+      }
+      -- > a {
+        text-decoration: none;
+      }
+      table,
+      tr,
+      td {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="http://www.11st.co.kr">
+        <img src="images/logo.png" alt="logo" />
+      </a>
+    </header>
+    <div class="menu clearfix">
+      <ul>
+        <li>컴퓨터</li>
+        <li>의류</li>
+        <li>가구/인테리어</li>
+        <li>스포츠/레저</li>
+        <li>식품</li>
+      </ul>
+    </div>
+    <div class="main">
+      <div class="product HP">
+        <h2>HP</h2>
+        <img src="images/hp.jpg" alt="" />
+        <p class="comment">
+          코어 장착 외장 그래픽 성능을 뛰어넘는 intel UHD DDR4 8G SSD 256G
+        </p>
+        <p class="price">가격 : 1,200,000원</p>
+        <input type="button" value="쇼핑카트에 추가하기" />
+      </div>
+      <div class="product Samsung">
+        <h2>삼성 노트북 펜</h2>
+        <img src="images/samsung.jpg" alt="" />
+        <p class="comment">
+          쿼드코어 장착 8GB DDR4 Memory 멀티 태스킹에 탁월한 FHD 고해상도
+        </p>
+        <p class="price">가격 : 1,199,000원</p>
+        <input type="button" value="쇼핑카트에 추가하기" />
+      </div>
+      <div class="product LG1">
+        <h2>LG gram</h2>
+        <img src="images/lggram.jpg" alt="" />
+        <p class="comment">
+          코어 장착 외장 그래픽 성능을 뛰어넘는 intel UHD DDR4 8G SSD 256G
+        </p>
+        <p class="price">가격 : 1,439,000원</p>
+        <input type="button" value="쇼핑카트에 추가하기" />
+      </div>
+      <div class="product LG2">
+        <h2>LG gram</h2>
+        <img src="images/note.png" alt="" />
+        <p class="comment">
+          코어 장착 외장 그래픽 성능을 뛰어넘는 intel UHD DDR4 8G SSD 256G
+        </p>
+        <p class="price">가격 : 1,139,000원</p>
+        <input type="button" value="쇼핑카트에 추가하기" />
+      </div>
+    </div>
+    <footer>
+      <table>
+        <tr>
+          <td><a href="#">회사소개</a></td>
+          <td><a href="#">이용약관</a></td>
+          <td><a href="#">전자금융거래약관</a></td>
+          <td><a href="#">개인정보처리방침</a></td>
+          <td><a href="#">입점문의</a></td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>
